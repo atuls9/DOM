@@ -123,3 +123,40 @@
 //lecture 2
 // ***** TRAVERSING THE DOM *****-------
 
+var items = document.querySelector('#items');
+// parentnode
+// console.log(items.parentNode);
+// items.parentNode.style.backgroundColor = "gray"
+// console.log(items.parentNode.parentNode.parentNode);
+
+
+// parentElement
+// console.log(items.parentElement);
+// items.parentElement.style.backgroundColor = "gray"
+// console.log(items.parentElement.parentElement.parentElement);
+
+//chileNodes
+//no suggestion to use
+// console.log(items.childNodes);
+
+//children
+// console.log(items.children);
+// console.log(items.children[1]);
+
+
+//firstChild
+// console.log(items.firstChild); //no suggeation instead firstElementChild
+
+
+//firstElementChild
+// console.log(items.firstElementChild);
+// items.firstElementChild.textContent = 'hello 34'
+
+ 
+//lastChild
+// console.log(items.lastChild); //no suggeation instead lastElementChild
+
+
+//lastElementChild
+console.log(items.lastElementChild);
+items.lastElementChild.textContent = 'hello 364'
