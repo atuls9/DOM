@@ -65,38 +65,55 @@
 //---------------------------------------------------------------------------------------------
 
 
-// ***** QUERYSELECTOR **** //
-// use for one item and it grab first one;
-//it grabs any CLASS/TAG/ID-- use {'#' before ID and '.' before CLASSNAME}
+// ***** QUERYSELECTOR ***** //
+// // use for one item and it grab first one;
+// //it grabs any CLASS/TAG/ID-- use {'#' before ID and '.' before CLASSNAME}
 
 
-var header = document.querySelector('#main-header');
-header.style.borderBottom = 'solid 5px black';
-var input = document.querySelector('input');
-input.value = 'Hello world!!!!!!!!!!';
+// var header = document.querySelector('#main-header');
+// header.style.borderBottom = 'solid 5px black';
+// var input = document.querySelector('input');
+// input.value = 'Hello world!!!!!!!!!!';
 
-var title = document.querySelector('.title');
-console.log(title.textContent);
+// var title = document.querySelector('.title');
+// console.log(title.textContent);
 
-var submit = document.querySelector('input[type ="submit"]');
-submit.value = 'send'
-submit.style.backgroundColor = 'yellow'
-submit.style.color = 'black'
+// var submit = document.querySelector('input[type ="submit"]');
+// submit.value = 'send'
+// submit.style.backgroundColor = 'yellow'
+// submit.style.color = 'black'
  
 
-// items
-var item = document.querySelector('.list-group-item')
-item.style.color = ' red'
+// // items
+// var item = document.querySelector('.list-group-item')
+// item.style.color = ' red'
 
-var lastItem = document.querySelector('.list-group-item:last-child');
-lastItem.style.color = 'blue'
+// var lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color = 'blue'
 
-var secondItem = document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.backgroundColor = 'green';
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.backgroundColor = 'green';
 
-var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
-thirdItem.style.opacity = 00;
+// var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+// thirdItem.style.opacity = 00;
 
 
 
-//--------------------------------------------------------------------------------------
+// //--------------------------------------------------------------------------------------
+
+// ***** QUERYSELECTORALL ***** //
+// //grab all items or elements;
+// //it grabs any CLASS/TAG/ID-- use {'#' before ID and '.' before CLASSNAME}
+
+var titles = document.querySelectorAll('.title');
+console.log(titles)
+
+var items = document.querySelectorAll('.list-group-item');
+console.log(items[1])
+items[1].style.color = 'green'
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+
+for(let el of odd){
+    el.style.backgroundColor = 'green'
+}
