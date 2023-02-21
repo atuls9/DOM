@@ -46,17 +46,57 @@
 
 
 // ***** GETELEMENTSBYTAGNAME *****//
-var li = document.getElementsByTagName('li');
-console.log(li[3].textContent);
-li[3].style.backgroundColor='yellow';
+// var li = document.getElementsByTagName('li');
+// console.log(li[3].textContent);
+// li[3].style.backgroundColor='yellow';
 
-for(let el of li){
-    el.style.fontWeight = 'bold';
-}
+// for(let el of li){
+//     el.style.fontWeight = 'bold';
+// }
 
-var items = document.getElementsByClassName('list-group-item');
-for(let el of items){
-        el.style.backgroundColor='yellow';;
-    }
-// ITEM5 which is now commented in html file is no change 
-// for second for loop(getElementsByClassName)
+// var items = document.getElementsByClassName('list-group-item');
+// for(let el of items){
+//         el.style.backgroundColor='yellow';;
+//     }
+// // ITEM5 which is now commented in html file is no change 
+// // for second for loop(getElementsByClassName)
+
+
+//---------------------------------------------------------------------------------------------
+
+
+// ***** QUERYSELECTOR **** //
+// use for one item and it grab first one;
+//it grabs any CLASS/TAG/ID-- use {'#' before ID and '.' before CLASSNAME}
+
+
+var header = document.querySelector('#main-header');
+header.style.borderBottom = 'solid 5px black';
+var input = document.querySelector('input');
+input.value = 'Hello world!!!!!!!!!!';
+
+var title = document.querySelector('.title');
+console.log(title.textContent);
+
+var submit = document.querySelector('input[type ="submit"]');
+submit.value = 'send'
+submit.style.backgroundColor = 'yellow'
+submit.style.color = 'black'
+ 
+
+// items
+var item = document.querySelector('.list-group-item')
+item.style.color = ' red'
+
+var lastItem = document.querySelector('.list-group-item:last-child');
+lastItem.style.color = 'blue'
+
+var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.backgroundColor = 'green';
+
+var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+thirdItem.style.opacity = 00;
+
+
+
+//--------------------------------------------------------------------------------------
