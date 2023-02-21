@@ -101,19 +101,25 @@
 
 // //--------------------------------------------------------------------------------------
 
-// ***** QUERYSELECTORALL ***** //
-// //grab all items or elements;
-// //it grabs any CLASS/TAG/ID-- use {'#' before ID and '.' before CLASSNAME}
+// // ***** QUERYSELECTORALL ***** //
+// // //grab all items or elements;
+// // //it grabs any CLASS/TAG/ID-- use {'#' before ID and '.' before CLASSNAME}
 
-var titles = document.querySelectorAll('.title');
-console.log(titles)
+// var titles = document.querySelectorAll('.title');
+// console.log(titles)
 
-var items = document.querySelectorAll('.list-group-item');
-console.log(items[1])
-items[1].style.color = 'green'
+// var items = document.querySelectorAll('.list-group-item');
+// console.log(items[1])
+// items[1].style.color = 'green'
 
-var odd = document.querySelectorAll('li:nth-child(odd)');
+// var odd = document.querySelectorAll('li:nth-child(odd)');
 
-for(let el of odd){
-    el.style.backgroundColor = 'green'
-}
+// for(let el of odd){
+//     el.style.backgroundColor = 'green'
+// }
+
+//--------------------------------------------------------------------------------------------
+
+//lecture 2
+// ***** TRAVERSING THE DOM *****-------
+
