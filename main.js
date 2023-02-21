@@ -36,6 +36,10 @@ var items = document.getElementsByClassName('list-group-item');
 console.log(items)
 items[2].style.backgroundColor = 'green'
 
+// ** Error ** //
+// items.style.fontWeight = 'bold'
+
+//so access all elements with the help of for loop
 for(let el of items){
     el.style.fontWeight ='bold';
 }
