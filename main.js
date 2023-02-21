@@ -22,9 +22,23 @@
 // headerTitle.style.borderBottom = "solid 3px #000"
 
 //adding id = subtitle for Add Items title
-var subHeading = document.getElementById('subtitle');
-console.log(subHeading)
+// var subHeading = document.getElementById('subtitle');
+// console.log(subHeading)
 // subHeading.textContent = 'ADD ITEM';
 // subHeading.style.fontWeight = 'bold';
 // subHeading.style.color = 'green';
+
+
+
+// ***** GETELEMENTSBYCLASSNAME PLURAL***** //
+
+var items = document.getElementsByClassName('list-group-item');
+console.log(items)
+items[2].style.backgroundColor = 'green'
+
+for(let el of items){
+    el.style.fontWeight ='bold';
+}
+
+
 
