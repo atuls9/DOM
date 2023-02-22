@@ -158,5 +158,65 @@ var items = document.querySelector('#items');
 
 
 //lastElementChild
-console.log(items.lastElementChild);
-items.lastElementChild.textContent = 'hello 364'
+// console.log(items.lastElementChild);
+// items.lastElementChild.textContent = 'hello 364'
+
+
+//nextsiblings // not suggested instead nextElementsibling
+// console.log(items.nextSibling);
+
+// //nextElementSibling
+// console.log(items.nextElementSibling);
+
+
+// previousDibling  or previousElementSiblimg
+// console.log(items.previousElementSibling)
+// items.previousElementSibling.style.color='red';
+
+
+
+// ***** createElement*****//
+//add 'div' --> 'class' --> 'id'-->atribute-->textnode -->add text to div 
+
+let newDiv = document.createElement('div');
+
+//add class
+newDiv.className = 'hello';
+
+// add id
+newDiv.id = 'hello1';
+
+
+//add attribute 
+newDiv.setAttribute('title', 'HELLo');
+// console.log(newDiv)
+
+
+//create text node
+var newDivText = document.createTextNode('HELLo')
+
+// //add text to div
+newDiv.appendChild(newDivText)
+console.log(newDiv)
+
+// var container = document.querySelector('header .container');
+// var h1 = document.querySelector('header h1');
+// container.insertBefore(newDiv, h1)
+
+ 
+let newDiv2 = document.createElement('li');
+newDiv2.className='list-group-item'
+
+var newDiv2Text = document.createTextNode('Hello World');
+newDiv2.appendChild(newDiv2Text)
+
+var parentNode = document.getElementById('items');
+// var str = parentNode.innerHTML;
+// str = newDiv2 + str;
+// console.log(str)
+parentNode.appendChild(newDiv2)
+var li = document.querySelector('ul li')
+parentNode.insertBefore(newDiv2, li)
+
+
+console.log(parentNode.innerHTML)
